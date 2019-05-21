@@ -1,0 +1,206 @@
+body{
+	font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    background: #eee;
+    height: auto;
+}
+
+h1 {
+	font-weight: 300;
+	font-size: 2.5rem;
+	margin: 0;
+}
+
+h2{
+	font-weight: 300;
+	font-size: 1.25rem;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color:inherit;
+}
+
+img{
+	display: block;
+	width:100%;
+}
+
+main{
+	max-width:900px;
+	margin:auto;  
+	box-shadow:30px 0px 40px rgba(0,0,0),-30px 0px 40px rgba(0,0,0,0.1);
+}
+
+#grid-1{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr; 
+	height:80vh;
+	
+}
+
+#score{
+	width: 100%;
+	height: ;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#timer-wrap{
+  
+   display:flex;
+   flex-flow: row-reverse;
+}
+
+
+#timer-img{
+  background-image: url("img/icon/clock.png");
+  background-repeat:no-repeat;
+  background-position: center;
+  flex:1;
+  height:100%;
+}
+
+#timer{
+	flex:1;
+	align-self: center;
+	jutify-self:center;
+	font-size: 3em;
+
+}
+.main-image-1{
+	width:100%;
+	height:100%;
+	grid-column: 1 / span 2;
+	background-image: url("img/staves/stave-e.jpg");
+	height: 33vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+.main-image-2{
+	width:100%;
+	height:100%;
+	grid-column: 1 / span 2;
+	background-image: url("img/staves/stavef.png");
+	height: 33vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.main-image-3{
+	width:100%;
+	height:100%;
+	grid-column: 1 / span 2;
+	background-image: url("img/staves/staveg.png");
+	height: 33vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.main-image-4{
+	width:100%;
+	height:100%;
+	grid-column: 1 / span 2;
+	background-image: url("img/staves/stavea.png");
+	height: 33vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.main-image-5{
+	width:100%;
+	height:100%;
+	grid-column: 1 / span 2;
+	background-image: url("img/staves/staveb.png");
+	height: 33vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.main-image-6{
+	width:100%;
+	height:100%;
+	grid-column: 1 / span 2;
+	background-image: url("img/staves/stavec.png");
+	height: 33vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.main-image-7{
+	width:100%;
+	height:100%;
+	grid-column: 1 / span 2;
+	background-image: url("img/staves/staved.png");
+	height: 33vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.main-image-8{
+	width:100%;
+	height:100%;
+	grid-column: 1 / span 2;
+	background-image: url("img/staves/stavee.png");
+	height: 33vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.main-image-9{
+	width:100%;
+	height:100%;
+	grid-column: 1 / span 2;
+	background-image: url("img/staves/stavef2.png");
+	height: 33vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+#text{
+	grid-column: 1 / span 2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2.5rem;
+}
+
+#text h1{
+	
+}
+
+
+#button-section{
+	display: grid;
+	grid-template-columns: repeat(9, 1fr);
+	grid-template-rows: 1fr;
+	height: 20vh;
+	justify-items:center;
+}
+
+.button{
+	max-width: 90px;
+	max-height: 90px;
+	width: 90px;
+	height: 90px;
+	align-self: center;
+}
+
+#button-1{
+
+}
