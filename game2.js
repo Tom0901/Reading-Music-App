@@ -1,60 +1,64 @@
-//Global Scope// 
+//global scope 
 const min = 1;
-const max = 9;
+const max = 8;
 let random = Math.floor(Math.random() * (+max - +min)) + +min;
 let playerScore= 0; 
-const mainImage =document.querySelector('.main-image-1'); 
-(function(){
-
-	while(random===1){
-      mainImage.className == "main-image-1"; 
-    }
-    while(random===2){
-    mainImage.classList.toggle( "main-image-2"); 
-       
-    }
-    while(random===3){
-    mainImage.classList.toggle( "main-image-3");
-  
-    }
-    while(random===4){
-    mainImage.classList.toggle( "main-image-4");
-        
-    }
-    while(random===5){
-  mainImage.classList.toggle( "main-image-5");
-        
-    }
-    while(random===6){
-    mainImage.classList.toggle( "main-image-6"); 
-      
-    }
-    while(random===7){
-    mainImage.classList.toggle( "main-image-7"); 
-    
-    }
-    while(random===8){
-    mainImage.classList.toggle( "main-image-8");  
-   
-    }
-    while(random===9){
-    mainImage.classList.toggle( "main-image-9");
-    }
-})();
-//update score and select new image// 
 const updateScore =()=>{ 
     const display = document.getElementById('score'); 
     display.textContent = playerScore; 
-    
-   
-
 };
+
+const mainImage =document.querySelector('.main-image-1'); 
+(function(){
+
+    if(random===1){
+      mainImage.className == "main-image-1"; 
+    }
+    if(random===2){
+    mainImage.classList.toggle( "main-image-2"); 
+       
+    }
+    if(random===3){
+    mainImage.classList.toggle( "main-image-3");
+  
+    }
+    if(random===4){
+    mainImage.classList.toggle( "main-image-4");
+        
+    }
+    if(random===5){
+  mainImage.classList.toggle( "main-image-5");
+        
+    }
+    if(random===6){
+    mainImage.classList.toggle( "main-image-6"); 
+      
+    }
+    if(random===7){
+    mainImage.classList.toggle( "main-image-7"); 
+    
+    }
+    if(random===8){
+    mainImage.classList.toggle( "main-image-8");  
+   
+    }
+    if(random===9){
+    mainImage.classList.toggle( "main-image-9");
+    }
+})();
+
 //scoping function// 
 
 
 const game = ()=>{
+
  
 const text = document.getElementById('text'); 
+//render result//
+
+
+
+
 
 //timer//
 function startTimer(duration, display) {
@@ -80,6 +84,9 @@ window.onload = function () {
     startTimer(fiveMinutes, display);
 };
 
+//game functionality// 
+
+
 
 console.log(random);
 
@@ -96,8 +103,6 @@ const button6 = document.getElementById('button6');
 const button7 = document.getElementById('button7');
 const button8 = document.getElementById('button8');
 const button9 = document.getElementById('button9');
-
-//button functions// 
 
 const button1Click = ()=> {
     button1.addEventListener('click', ()=>{
@@ -126,11 +131,7 @@ const button2Click = ()=> {
         if (number2===random) {
             playerScore++;
         updateScore();
-        (function(){
-            random = Math.floor(Math.random() * (+max - +min)) + +min;
-            console.log(random); 
-        })();
-      
+        game();
         }
         else { text.textContent = "Try Again"; 
 
@@ -147,10 +148,7 @@ const button3Click = ()=> {
         if (number3===random) {
             playerScore++;
         updateScore();
-        (function(){
-            random = Math.floor(Math.random() * (+max - +min)) + +min;
-            console.log(random); 
-        })();
+        game();
         }
         else { text.textContent = "Try Again"; 
 
@@ -168,10 +166,7 @@ const button4Click = ()=> {
         if (number4===random) {
             playerScore++;
         updateScore();
-        (function(){
-            random = Math.floor(Math.random() * (+max - +min)) + +min;
-            console.log(random); 
-        })();
+        game();
         }
         else { text.textContent = "Try Again"; 
 
@@ -189,10 +184,7 @@ const button5Click = ()=> {
         if (number5===random) {
             playerScore++;
         updateScore();
-        (function(){
-            random = Math.floor(Math.random() * (+max - +min)) + +min;
-            console.log(random); 
-        })();
+        game();
         }
         else { text.textContent = "Try Again"; 
 
